@@ -15,5 +15,4 @@ Hooks.once("ready", async () => {
 		slots: [1, 5, 9, 13, 17]
 	});
 	game.settings.set("pf2e", "campaignFeatSections", campaignFeatSections);
-
 })
