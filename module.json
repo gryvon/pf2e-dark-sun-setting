@@ -1,0 +1,316 @@
+{
+  "id": "pf2e-dark-sun-setting",
+  "title": "Carpe DM's Unofficial Dark Sun Setting for PF2E",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.3.0"
+        }
+      },
+      {
+        "id": "carpe-dms-pf2e-weapon-durability",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/gryvon/carpe-dms-pf2e-weapon-durability/main/module.json",
+        "compatibility": {
+          "minimum": "0.0.2",
+          "verified": "0.0.2"
+        }
+      }
+    ]
+  },
+  "socket": true,
+  "description": "Custom ancestries, hertitages, classes and equipment for Dark Sun for Pathfinder Second Edition.",
+  "authors": [
+    {
+      "name": "Carpe DM",
+      "discord": "_carpedm",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "dark-sun-equipment",
+      "label": "Equipment",
+      "path": "packs/dark-sun-equipment.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-actions",
+      "label": "Actions",
+      "path": "packs/dark-sun-actions.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-ancestries",
+      "label": "Ancestries",
+      "path": "packs/dark-sun-ancestries.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-ancestry-features",
+      "label": "Ancestries Features",
+      "path": "packs/dark-sun-ancestry-features.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-backgrounds",
+      "label": "Backgrounds",
+      "path": "packs/dark-sun-backgrounds.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-classes",
+      "label": "Classes",
+      "path": "packs/dark-sun-classes.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-class-features",
+      "label": "Class Features",
+      "path": "packs/dark-sun-class-features.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-feats",
+      "label": "Feats",
+      "path": "packs/dark-sun-feats.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-heritages",
+      "label": "Heritages",
+      "path": "packs/dark-sun-heritages.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-spells",
+      "label": "Spells",
+      "path": "packs/dark-sun-spells.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-deities",
+      "label": "Deities",
+      "path": "packs/dark-sun-deities.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-journals",
+      "label": "Journals",
+      "path": "packs/dark-sun-journals.db",
+      "system": "pf2e",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dark-sun-effects",
+      "label": "Effects",
+      "path": "packs/dark-sun-effects.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Dark Sun (Unofficial)",
+      "sorting": "a",
+      "color": "#675c13",
+      "packs": [
+        "dark-sun-journals"
+      ],
+      "folders": [
+        {
+          "name": "Character Building",
+          "sorting": "a",
+          "color": "#343c33",
+          "packs": [
+            "dark-sun-actions",
+            "dark-sun-ancestries",
+            "dark-sun-ancestry-features",
+            "dark-sun-backgrounds",
+            "dark-sun-classes",
+            "dark-sun-class-features",
+            "dark-sun-feats",
+            "dark-sun-heritages",
+            "dark-sun-spells",
+            "dark-sun-equipment",
+            "dark-sun-deities",
+            "dark-sun-effects"
+          ]
+        }
+      ]
+    }
+  ],
+  "flags": {
+    "pf2e-dark-sun-setting": {
+      "pf2e-homebrew": {
+        "creatureTraits": {
+          "aarakocra": "Aarakocra",
+          "draji": "Draji",
+          "fleshwarped": "Fleshwarped",
+          "mul": "Mul",
+          "tari": "Tari",
+          "kreen": "Kreen",
+          "half-elf": "Half-Elf",
+          "half-giant": "Half-Giant"
+        },
+        "featTraits": {
+          "aarakocra": "Aarakocra",
+          "draji": "Draji",
+          "fleshwarped": "Fleshwarped",
+          "mul": "Mul",
+          "tari": "Tari",
+          "kreen": "Kreen",
+          "half-elf": "Half-Elf",
+          "half-giant": "Half-Giant",
+          "wild-talent": "Wild Talent"
+        },
+        "weaponTraits": {
+          "flaw": {
+            "label": "Flaw",
+            "description": "A player can choose to reroll a critical miss or on a critical hit can choose to do max damage, if a player chooses this effect the weapon takes 1d6 damage and reduces max hit points by 1."
+          },
+          "inferior": {
+            "label": "Inferior",
+            "description": "Weapons constructed from inferior materials, such as bone longsword or an axe with a head made from stone, suffer a –1 penalty to attack and damage rolls."
+          },
+          "gladiator": {
+            "label": "Gladiator",
+            "description": "This trait is referenced by several weapons in the book, but no description is given."
+          },
+          "kreen": {
+            "label": "Kreen",
+            "description": "This weapon is commonly used by the kreen ancestries."
+          },
+          "draji": {
+            "label": "Draji",
+            "description": "This weapon is commonly used by the dray."
+          },
+          "tarek": {
+            "label": "Tarek",
+            "description": "Description not available."
+          },
+          "weighty": {
+            "label": "Weighty",
+            "description": "These weapon's Bulk is increased by 1 (or to 1 Bulk if its normal Bulk is L)."
+          },
+          "lightweight": {
+            "label": "Lightweight",
+            "description": "These weapon’s Bulk is reduced by 1 (or to light Bulk if its normal Bulk is 1, with no eff ect on an itemthat normally has light Bulk). This trait does not apply to bows or clubs."
+          },
+          "bone": {
+            "label": "Bone",
+            "description": "This weapon is constructed primarily of bone."
+          },
+          "stone": {
+            "label": "Stone",
+            "description": "This weapon is constructed primarily of stone."
+          },
+          "dwarven-steel": {
+            "label": "Dwarven Steel",
+            "description": "It's the bee's knees."
+          }
+        },
+        "baseWeapons": {
+          "puchik": "Puchik",
+          "quabone": "Quabone",
+          "singing-sticks": "Singing Sticks",
+          "talid": "Talid",
+          "widows-knife": "Widow's Knife",
+          "alak": "Alak",
+          "datchi-club": "Datchi Club",
+          "forearm-axe": "Forearm Axe",
+          "gouge": "Gouge",
+          "impaler": "Impaler",
+          "bards-friend": "Bard's Friend",
+          "carrikal": "Carrikal",
+          "bards-garrote": "Bard's Garrote",
+          "handfork": "Handfork",
+          "heartpick": "Heartpick",
+          "khakkara": "Khakkara",
+          "ko": "Ko•",
+          "lotulis": "Lotulis",
+          "macuahuitl-small": "Small Macuahuitl",
+          "macuahuitl": "Macuahuitl",
+          "macuahuitl-great": "Great Macuahuitl",
+          "masters-whip": "Master's Whip",
+          "mekillot-sap": "Mekillot Sap",
+          "skyhammer": "Skyhammer",
+          "slodak": "Slodak",
+          "spear-double-tipped": "Double-tipped Spear",
+          "thanak": "Thanak",
+          "tkaesali": "Tkaesali",
+          "weighted-pike": "Weighted Pike",
+          "wrist-razor": "Wrist Razor",
+          "alhulak": "Alhulak",
+          "cahulaks": "Cahulaks",
+          "chatkcha": "Chatkcha",
+          "crusher": "Crusher",
+          "dragons-paw": "Dragon's Paw",
+          "gythka": "Gythka",
+          "kyorkcha": "Kyorkcha",
+          "lajav": "Lajav",
+          "trikal": "Trikal",
+          "pelota": "Pelota",
+          "hinged-pelota": "Hinged Pelota",
+          "dejada": "Dejada",
+          "splashbow": "Splashbow"
+        },
+        "baseArmors": {
+          "chitin-armor": "Chitin Armor",
+          "wood-armor": "Wood Armor",
+          "bone-armor": "Bone Armor",
+          "shell-armor": "Shell Armor",
+          "lamellar-armor": "Lamellar Armor"
+        }
+      }
+    }
+  },
+  "scripts": [
+    "scripts/pf2e-dark-sun-setting.js"
+  ]
+}
