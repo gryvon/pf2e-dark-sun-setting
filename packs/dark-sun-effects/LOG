@@ -1,3 +1,5 @@
-2024/09/20-09:22:13.408 3464 Recovering log #32
-2024/09/20-09:22:13.411 3464 Delete type=0 #32
-2024/09/20-09:22:13.411 3464 Delete type=3 #31
+2024/09/20-19:54:37.891 1dfc Recovering log #38
+2024/09/20-19:54:37.891 1dfc Level-0 table #40: started
+2024/09/20-19:54:37.893 1dfc Level-0 table #40: 6515 bytes OK
+2024/09/20-19:54:37.897 1dfc Delete type=0 #38
+2024/09/20-19:54:37.897 1dfc Delete type=3 #37
