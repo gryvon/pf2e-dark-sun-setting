@@ -28,12 +28,12 @@ Hooks.on("pf2e.restForTheNight", async (character) => {
 	  content: myHtml,
   buttons: {
     button1: {
-      label: "Yes!",
+      label: "Eat Provisions",
       callback: () => { eatFood(character) },
       icon: `<i class="fas fa-check"></i>`
     },
     button2: {
-      label: "No!!!",
+      label: "Make a Starvation Check",
       callback: () => { starve(character) },
       icon: `<i class="fas fa-times"></i>`
     }
@@ -41,35 +41,30 @@ Hooks.on("pf2e.restForTheNight", async (character) => {
   default: "button1"}).render(true);
 });
 
-async function eatFood(character) {
-	console.log(character);
-
-	let foodRequired = 1;
+function foodRequiredBySize(character) {
 	const characterSize = character.system.traits.size.value;
-
 	if (characterSize == "sm") {
-		foodRequired = 0.5;
+		return 0.5;
 	}
-	else if (characterSize == "lg") {
-		foodRequired = 4;
+	if (characterSize == "lg") {
+		return 4;
 	}
+	return 1;
+}
 
+async function eatFood(character) {
+	const foodRequired = foodRequiredBySize(character);
 	const party = character.parties.first();
+	const foodOnHand = party.system.darkSun.foodPoints;
 
-	if (!party.hasOwnProperty('darkSun')) {
-		party.darkSun = {
-			foodPoints: 0,
-			resourcePoints: 0
-		}
-	}
-
-	if (party.darkSun.foodPoints <= foodRequired) {
+	if (foodRequired > foodOnHand) {
 		ui.notifications.info("You don't have enough food points.");
 		starve(character);
 		return;
-	}
+	}	
 
-	party.darkSun.foodPoints -= foodRequired;
+	party.update({'system.darkSun.foodPoints': foodOnHand - foodRequired});
+	sendChatMessage(character, `${character.name} has consumed ${foodRequired} food points.`);
 }
 
 async function starve(character) { 
@@ -103,7 +98,7 @@ async function getEffect(uuid) {
 }
 
 
-// Get the standard DC by level.
+// Get a good-enough standard DC by level.
 function getDCByLevel(level) {
 	return level + Math.floor(level / 3) + 14
 }
@@ -118,7 +113,7 @@ function sendChatMessage(character, content) {
 Hooks.on("renderPartySheetPF2e", async (party, html, actor) => {
 	console.log("Party sheet detected!")
 
-	// Path to custom template.
+ 	// Path to custom template.
 	const tpl = 'modules/pf2e-dark-sun-setting/templates/party-resources.hbs';
 
 	// Render the data into the template's handlebars.
@@ -129,12 +124,19 @@ Hooks.on("renderPartySheetPF2e", async (party, html, actor) => {
 
 	target.append(myHtml);
 
+  html.find(".foodPoints").click(async (event) => {
+      await adjustmentFoodDialog(party.actor._id);
+  });
+
+  html.find(".resourcePoints").click(async (event) => {
+      await adjustmentResourceDialog(party.actor._id);
+  });
+
+
 })
 
-
-////////////////////////////
-
-async function adjustmentFoodDialog(party) {
+async function adjustmentFoodDialog(actorId) {
+	const party = game.actors.get(actorId);
 	let foodAdjustment;
 	try {
 	  foodAdjustment = await foundry.applications.api.DialogV2.prompt({
@@ -142,28 +144,55 @@ async function adjustmentFoodDialog(party) {
 	    content: '<input name="adj" type="number" autofocus>',
 	    ok: {
 	      label: "Submit",
-	      callback: (event, button, dialog) => button.form.elements.guess.valueAsNumber
+	      callback: (event, button, dialog) => button.form.elements.adj.valueAsNumber
 	    }
 	  });
 	} catch {
 	  //console.log("User did not make a guess.");
 	  return;
 	}
-	adjustFood(party, foodAdjustment);
+	await adjustFood(party, foodAdjustment);
 }
 
-Hooks.on("darksun.adjustmentFoodDialog"), async (party) => {
-  await adjustmentFoodDialog(party)
+async function adjustmentResourceDialog(actorId) {
+	const party = game.actors.get(actorId);
+	let foodAdjustment;
+	try {
+	  foodAdjustment = await foundry.applications.api.DialogV2.prompt({
+	    window: { title: "How much would you like to adjust the Resource Points?" },
+	    content: '<input name="adj" type="number" autofocus>',
+	    ok: {
+	      label: "Submit",
+	      callback: (event, button, dialog) => button.form.elements.adj.valueAsNumber
+	    }
+	  });
+	} catch {
+	  //console.log("User did not make a guess.");
+	  return;
+	}
+	await adjustResources(party, foodAdjustment);
 }
 
 async function adjustFood(party, value) {
-  if (!party.hasOwnProperty('darkSun')) {
+  if (!party.system.hasOwnProperty('darkSun')) {
     party.system.darkSun = {
       foodPoints: 0,
       resourcePoints: 0
     }
   }
 
-  let newFoodValue = (party.darkSun.system.foodPoints || 0) + value;
-  await party.update({ "darkSun.system.foodPoints": newFoodValue });
+  let newFoodValue = (party.system.darkSun.foodPoints || 0) + value;
+  await party.update({ "system.darkSun.foodPoints": newFoodValue });
+}
+
+async function adjustResources(party, value) {
+  if (!party.system.hasOwnProperty('darkSun')) {
+    party.system.darkSun = {
+      foodPoints: 0,
+      resourcePoints: 0
+    }
+  }
+
+  let newResourcesValue = (party.system.darkSun.resourcePoints || 0) + value;
+  await party.update({ "system.darkSun.resourcePoints": newResourcesValue });
 }

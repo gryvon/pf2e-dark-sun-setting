@@ -310,7 +310,7 @@
       }
     }
   },
-  "scripts": [
+  "esmodules": [
     "scripts/pf2e-dark-sun-setting.js"
   ]
 }
