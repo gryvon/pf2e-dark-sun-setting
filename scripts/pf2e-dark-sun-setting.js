@@ -3,8 +3,13 @@ Hooks.once('init', () => {
 		'modules/pf2e-dark-sun-setting/templates/rest-for-the-night.hbs',
 		'modules/pf2e-dark-sun-setting/templates/party-resources.hbs',
 	]);
-	console.debug("pf2e-dark-sun-setting | Initialized.")
-});
+	console.log(`
+    ___           _      __                     
+   /   \\__ _ _ __| | __ / _\\_   _ _ __          
+  / /\\ / _  | '__| |/ / \\ \\| | | | '_ \\         
+ / /_// (_| | |  |   <  _\\ \\ |_| | | | |        
+/___,' \\__,_|_|  |_|\\_\\ \\__/\\__,_|_| |_|`);
+})
 
 Hooks.once("ready", async () => {
 	const campaignFeatSections = game.settings.get("pf2e", "campaignFeatSections");
