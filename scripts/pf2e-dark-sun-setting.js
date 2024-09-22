@@ -68,7 +68,7 @@ async function eatFood(character) {
 }
 
 async function starve(character) { 
-	const effectUuid = "Compendium.pf2e-dark-sun-setting.dark-sun-effects.Item.fjXlMjzWT1e7BLB9";
+	const effectUuid = "Compendium.pf2e-dark-sun-setting.dark-sun-effects.Item.QwvGFwLQMEpMOCpY";
 	const level = character.level;
 	const dc = getDCByLevel(level);
 
