@@ -84,7 +84,7 @@ async function starve(character) {
 	if (roll.options.degreeOfSuccess <= 1) {
 		if (existingEffect) {
 			let newBadgeValue = (existingEffect.system.badge?.value || 1) + 1;
-			await existingEffect.update({ "system.badge.value": newBadgeValue });
+			await existingEffect.update({"system.badge.value": newBadgeValue});
 		}
 		else {
 			const effect = await getEffect(effectUuid);

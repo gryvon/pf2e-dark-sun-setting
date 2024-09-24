@@ -1,6 +1,6 @@
 {
   "id": "pf2e-dark-sun-setting",
-  "title": "Carpe DM's Unofficial Dark Sun Setting for PF2E",
+  "title": "Dark Sun Setting for PF2E (Unofficial)",
   "version": "0.0.1",
   "compatibility": {
     "minimum": "12",
@@ -43,6 +43,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -52,6 +53,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -61,6 +63,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -70,6 +73,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -79,6 +83,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -88,6 +93,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -97,6 +103,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -106,6 +113,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -115,6 +123,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -124,6 +133,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -133,15 +143,17 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
       "name": "dark-sun-journals",
-      "label": "Journals",
+      "label": "Dark Sun Journals",
       "path": "packs/dark-sun-journals.db",
       "system": "pf2e",
       "type": "JournalEntry",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     },
     {
@@ -151,6 +163,7 @@
       "system": "pf2e",
       "type": "Item",
       "private": false,
+      "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
       "flags": {}
     }
   ],
@@ -160,7 +173,8 @@
       "sorting": "a",
       "color": "#675c13",
       "packs": [
-        "dark-sun-journals"
+        "dark-sun-journals",
+        "general-and-skill-feats"
       ],
       "folders": [
         {
@@ -313,5 +327,16 @@
   },
   "esmodules": [
     "scripts/pf2e-dark-sun-setting.js"
-  ]
+  ],
+  "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
+  "media": [
+  {
+      "type": "setup",
+      "caption": "Pathfinder 2e Dark Sun Campaign Setting",
+      "thumbnail": "modules/pf2e-dark-sun-setting/images/preview.webp"
+  }
+],
+  "manifest": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/module.json",
+  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/releases/pf2e-dark-sun-setting.zip",
+  "url": "https://github.com/gryvon/pf2e-dark-sun-setting"
 }
