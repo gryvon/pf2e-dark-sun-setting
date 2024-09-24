@@ -136,9 +136,27 @@ Hooks.on("renderPartySheetPF2e", async (party, html, actor) => {
   html.find(".resourcePoints").click(async (event) => {
       await adjustmentResourceDialog(party.actor._id);
   });
-
-
 })
+
+Hooks.on("renderCharacterSheetPF2e", async (party, html, actor) => {
+
+    let ancestryElement = html.find('a[data-action="open-compendium"][data-compendium="pf2e.ancestries"]');
+    ancestryElement.replaceWith('<a data-action="open-compendium" data-compendium="pf2e-dark-sun-setting.dark-sun-ancestries"><i class="fa-solid fa-fw fa-search"></i></a>')
+
+    let heritageElement = html.find('a[data-action="open-compendium"][data-compendium="pf2e.heritages"]');
+    heritageElement.replaceWith('<a data-action="open-compendium" data-compendium="pf2e-dark-sun-setting.dark-sun-heritages"><i class="fa-solid fa-fw fa-search"></i></a>')
+
+    let backgroundElement = html.find('a[data-action="open-compendium"][data-compendium="pf2e.backgrounds"]');
+    backgroundElement.replaceWith('<a data-action="open-compendium" data-compendium="pf2e-dark-sun-setting.dark-sun-backgrounds"><i class="fa-solid fa-fw fa-search"></i></a>')
+
+    let classElement = html.find('a[data-action="open-compendium"][data-compendium="pf2e.classes"]');
+    classElement.replaceWith('<a data-action="open-compendium" data-compendium="pf2e-dark-sun-setting.dark-sun-classes"><i class="fa-solid fa-fw fa-search"></i></a>')
+
+    let deityElement = html.find('a[data-action="open-compendium"][data-compendium="pf2e.deities"]');
+    deityElement.replaceWith('<a data-action="open-compendium" data-compendium="pf2e-dark-sun-setting.dark-sun-deities"><i class="fa-solid fa-fw fa-search"></i></a>')
+
+});
+
 
 async function adjustmentFoodDialog(actorId) {
 	const party = game.actors.get(actorId);
@@ -153,7 +171,6 @@ async function adjustmentFoodDialog(actorId) {
 	    }
 	  });
 	} catch {
-	  //console.log("User did not make a guess.");
 	  return;
 	}
 	await adjustFood(party, foodAdjustment);
@@ -202,11 +219,10 @@ async function adjustResources(party, value) {
   await party.update({ "system.darkSun.resourcePoints": newResourcesValue });
 }
 
-import CONFIG from "./module.mjs";
+// import CONFIG from "./module.mjs";
 
-/* Work in progress
 function registerSettings() {
-  game.settings.register(CONFIG.moduleId, "releaseAnnouncement", {
+  game.settings.register("pf2e-dark-sun-setting", "releaseAnnouncement", {
     name: "Release Announcement",
     scope: "client",
     config: true,
@@ -221,11 +237,10 @@ Hooks.once("init", () => {
 
 Hooks.once('ready', async function() {
   if (game.user.isGM) {
-    if (game.settings.get(CONFIG.moduleId, "releaseAnnouncement")) {
-      const journal = await fromUuid("Compendium.battlezoo-eldamon-pf2e.journals.5GXnKkDxsil3Rd3u")
+    if (game.settings.get("pf2e-dark-sun-setting", "releaseAnnouncement")) {
+      const journal = await fromUuid("Compendium.pf2e-dark-sun-setting.dark-sun-journals.JournalEntry.eOYi5mTvgYnGfZRX")
       journal.sheet.render(true)
-      await game.settings.set(CONFIG.moduleId, "releaseAnnouncement", false)
+      await game.settings.set("pf2e-dark-sun-setting", "releaseAnnouncement", false)
     }
   }
 })
-*/
