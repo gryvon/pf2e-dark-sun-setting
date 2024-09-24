@@ -12,3 +12,4 @@
 * Fixed a few grammatical errors in different entry descriptions.
 * Fixed **Resourceful Thri-Kreen** accidently giving martial weapon proficiency.
 * Added **Level Zero** class, since PF2E doesn't handle Level 0 characters according to the core rulebooks.
+* Added script to automatically popup the module's introduction journal when a player enters the world for the first time.
