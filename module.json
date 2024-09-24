@@ -328,6 +328,6 @@
     }
   ],
   "manifest": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/module.json",
-  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/releases/pf2e-dark-sun-setting.zip",
+  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/releases/download/Pre-release/pf2e-dark-sun-setting.zip",
   "url": "https://github.com/gryvon/pf2e-dark-sun-setting"
 }
