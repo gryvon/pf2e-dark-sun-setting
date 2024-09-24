@@ -15,17 +15,6 @@
           "minimum": "6.3.0"
         }
       }
-    ],
-    "modules": [
-      {
-        "id": "carpe-dms-pf2e-weapon-durability",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/gryvon/carpe-dms-pf2e-weapon-durability/main/module.json",
-        "compatibility": {
-          "minimum": "0.0.2",
-          "verified": "0.0.2"
-        }
-      }
     ]
   },
   "socket": true,
