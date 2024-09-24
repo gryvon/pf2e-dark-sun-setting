@@ -201,3 +201,31 @@ async function adjustResources(party, value) {
   let newResourcesValue = (party.system.darkSun.resourcePoints || 0) + value;
   await party.update({ "system.darkSun.resourcePoints": newResourcesValue });
 }
+
+import CONFIG from "./module.mjs";
+
+/* Work in progress
+function registerSettings() {
+  game.settings.register(CONFIG.moduleId, "releaseAnnouncement", {
+    name: "Release Announcement",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true
+  })
+};
+
+Hooks.once("init", () => {
+  registerSettings();
+});
+
+Hooks.once('ready', async function() {
+  if (game.user.isGM) {
+    if (game.settings.get(CONFIG.moduleId, "releaseAnnouncement")) {
+      const journal = await fromUuid("Compendium.battlezoo-eldamon-pf2e.journals.5GXnKkDxsil3Rd3u")
+      journal.sheet.render(true)
+      await game.settings.set(CONFIG.moduleId, "releaseAnnouncement", false)
+    }
+  }
+})
+*/
