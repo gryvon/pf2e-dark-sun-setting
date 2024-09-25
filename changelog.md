@@ -1,7 +1,6 @@
 # Changelog
 ## Road Map
 * Import Spells into Spells compendium.
-* Add Module Settings to disable/enable food and resource points.
 * Add Versatile Heritages.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
