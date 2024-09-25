@@ -317,7 +317,9 @@
     }
   },
   "esmodules": [
-    "scripts/pf2e-dark-sun-setting.js"
+    "scripts/main.js",
+    "scripts/provisions.js",
+    "scripts/content-override.js"
   ],
   "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
   "media": [
@@ -328,6 +330,6 @@
     }
   ],
   "manifest": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/module.json",
-  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/releases/download/v0.0.2/pf2e-dark-sun-setting.0.0.2.zip",
+  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/releases/download/Pre-release/pf2e-dark-sun-setting.0.0.2.zip",
   "url": "https://github.com/gryvon/pf2e-dark-sun-setting"
 }
