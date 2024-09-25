@@ -1,8 +1,8 @@
 # Changelog
 ## Road Map
-* Add Lizardfolk to Ancestry compendium. (Opps! I missed that one!)
 * Import Spells into Spells compendium.
 * Add Module Settings to disable/enable food and resource points.
+* Add Versatile Heritages.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
@@ -20,3 +20,5 @@
 ### v0.0.3
 **Release Date: TBD**
 * Added world-level module setting to disable/enable Food and Resource Point System.
+* Added ancestry traits to **Dray** and **Thri-Kreen** ancestries (**Draji** and **Kreen**, respectively.)
+* Added Lizardfolk to Ancestry Compendium.
