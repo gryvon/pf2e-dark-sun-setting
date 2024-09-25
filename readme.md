@@ -1,4 +1,4 @@
-![Dark Sun Preview]([http://url/to/img.png](https://raw.githubusercontent.com/gryvon/pf2e-dark-sun-setting/refs/heads/main/assets/images/preview.webp))
+![Dark Sun Preview]([http://url/to/img.png](https://raw.githubusercontent.com/gryvon/pf2e-dark-sun-setting/refs/heads/main/assets/images/preview.webp?raw=true))
 
 # About This Module
 
