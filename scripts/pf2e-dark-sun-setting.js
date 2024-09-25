@@ -224,11 +224,25 @@ async function adjustResources(party, value) {
 function registerSettings() {
   game.settings.register("pf2e-dark-sun-setting", "releaseAnnouncement", {
     name: "Release Announcement",
+    hint: "Display the Dark Sun module's release announcement next time you log in.",
     scope: "client",
     config: true,
     type: Boolean,
     default: true
-  })
+  });
+  game.settings.register("pf2e-dark-sun-setting", "resetCompendiumLoaders", {
+    name: "Reset Compendium Browser Settings",
+    hint: "Reset the Compendium Browser to only display options from Dark Sun sources.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: value => {
+        if (value == true) {
+        	resetCompendiumLoaders();
+        }
+    }
+  });
 };
 
 Hooks.once("init", () => {
@@ -236,11 +250,56 @@ Hooks.once("init", () => {
 });
 
 Hooks.once('ready', async function() {
-  if (game.user.isGM) {
     if (game.settings.get("pf2e-dark-sun-setting", "releaseAnnouncement")) {
       const journal = await fromUuid("Compendium.pf2e-dark-sun-setting.dark-sun-journals.JournalEntry.eOYi5mTvgYnGfZRX")
       journal.sheet.render(true)
       await game.settings.set("pf2e-dark-sun-setting", "releaseAnnouncement", false)
     }
+  if (game.user.isGM) {
+  	if (game.settings.get("pf2e-dark-sun-setting", "resetCompendiumLoaders")) {
+  		await resetCompendiumLoaders();
+  		await game.settings.set("pf2e-dark-sun-setting", "resetCompendiumLoaders", false)
+  	}
   }
 })
+
+async function resetCompendiumLoaders() {
+	const browser = game.pf2e.compendiumBrowser.settings;
+	const cats = [
+	    'action', 
+	    'bestiary', 
+	    'campaignFeature', 
+	    'equipment', 
+	    'feat', 
+	    'hazard', 
+	    'spell'];
+	const pf2eSources = [
+	    "pf2e.actionspf2e",
+	    "pf2e.familiar-abilities",
+	    "xdy-pf2e-workbench.xdy-pf2e-workbench-items",
+	    "pf2e.bestiary-ability-glossary-srd",
+	    "pf2e.bestiary-family-ability-glossary",
+	    "pf2e.adventure-specific-actions"
+	];
+	let key;
+	cats.forEach(category => {
+	    if (browser[category]) {
+	        let keys = Object.keys(browser[category]);
+	        for (key of keys) {
+	            let source = browser[category][key];
+	            if (source.package == "pf2e-dark-sun-setting") {
+	                source.load = true;
+	            }
+	            else {
+	                if (pf2eSources.includes(key)) {
+	                    source.load = true;
+	                }
+	                else {
+	                    source.load = false;
+	                }
+	            }
+	        }    
+	    }
+	});
+	await game.settings.set("pf2e-dark-sun-setting", "resetCompendiumLoaders", false)
+}
