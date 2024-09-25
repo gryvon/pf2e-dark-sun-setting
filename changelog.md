@@ -2,6 +2,7 @@
 ## Road Map
 * Add Lizardfolk to Ancestry compendium. (Opps! I missed that one!)
 * Import Spells into Spells compendium.
+* Add Module Settings to disable/enable food and resource points.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
