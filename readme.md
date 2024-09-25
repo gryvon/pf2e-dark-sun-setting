@@ -1,3 +1,5 @@
+![Dark Sun Preview]([http://url/to/img.png](https://raw.githubusercontent.com/gryvon/pf2e-dark-sun-setting/refs/heads/main/assets/images/preview.webp))
+
 # About This Module
 
 The Pathfinder Second Edition Unofficial Dark Sun Setting module makes significant changes to the original Pathfinder Second Edition content. My goal is to make the transition from the standard rules and setting to this one as seamless as possible. To achieve this, all links to original content compendiums have been overridden with links to the custom compendiums provided by this module. For example, when you click the Ancestry search button on your character sheet, it will now open the Dark Sun ancestries instead of the standard Pathfinder 2e ancestries.
