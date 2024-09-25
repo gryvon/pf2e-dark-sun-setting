@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="https://github.com/gryvon/pf2e-dark-sun-setting/blob/main/assets/images/preview.webp?raw=true">
+</p>
+
 # About This Module
 
-The Pathfinder Second Edition Unofficial Dark Sun Setting module makes significant changes to the original Pathfinder Second Edition content. My goal is to make the transition from the standard rules and setting to this one as seamless as possible. To achieve this, all links to original content compendiums have been overridden with links to the custom compendiums provided by this module. For example, when you click the Ancestry search button on your character sheet, it will now open the Dark Sun ancestries instead of the standard Pathfinder 2e ancestries.
+The **Pathfinder Second Edition Unofficial Dark Sun Setting Module** makes significant changes to the original Pathfinder Second Edition content. My goal is to make the transition from the standard rules and setting to this one as seamless as possible. To achieve this, all links to original content compendiums have been overridden with links to the custom compendiums provided by this module. For example, when you click the Ancestry search button on your character sheet, it will now open the Dark Sun ancestries instead of the standard Pathfinder 2e ancestries.
 
 **Important**: One area where I couldn't implement this change is in the Compendium Browser. The GM for this game should go into the browser’s settings, disable the normal sources, and enable the Dark Sun sources. This will help prevent confusion by hiding character options and items that aren’t available on Athas from player searches.
 
