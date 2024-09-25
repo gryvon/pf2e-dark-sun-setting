@@ -25,6 +25,8 @@ Hooks.once("ready", async () => {
 Hooks.on("pf2e.restForTheNight", async (character) => {
 	console.log("Rest for Night Hook Triggered.");
 
+	if !(game.settings.get("pf2e-dark-sun-setting", "releaseAnnouncement")) { return; }
+
 	const tpl = 'modules/pf2e-dark-sun-setting/templates/rest-for-the-night.hbs';
 	const myHtml = await renderTemplate(tpl, { character });
 
