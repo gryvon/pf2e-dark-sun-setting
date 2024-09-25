@@ -14,6 +14,7 @@
 * Added Lizardfolk to Ancestry Compendium.
 * Now handling Food Consumption/Starvation via sockets so players get prompted when GM clicks rest button on Party Sheet.
 * Seperated JavaScript into multiple files for easier maintenance and development; cleaned up and organized code.
+* Removed links to Party Sheet to modify food and resource points (for players only.)
 ### v0.0.2
 **Release Date: 2024-09-24**
 * Added override to PlayerSheetPF2e to have ancestry, heritage, background, class and deity buttons open Dark Sun compendiums instead of the Core PF2E compendiums.

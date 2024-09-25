@@ -3,7 +3,6 @@
 Hooks.once('init', () => {
 	// Register Templates for the "Rest for Night" dialog and the Food/Resource
 	// Points Tracker on the Dialog.
-
 	loadTemplates([
 		'modules/pf2e-dark-sun-setting/templates/rest-for-the-night.hbs',
 		'modules/pf2e-dark-sun-setting/templates/party-resources.hbs',
@@ -24,7 +23,8 @@ Hooks.on("renderPartySheetPF2e", async (party, html, actor) => {
 	const tpl = 'modules/pf2e-dark-sun-setting/templates/party-resources.hbs';
 
 	// Render the data into the template's handlebars.
-	const myHtml = await renderTemplate(tpl, { actor });
+	const isGM = game.user.isGM;
+	const myHtml = await renderTemplate(tpl, { actor, isGM });
 
 	// Find the inventory portion.
 	const target = $(html).find('div.summary-data');
@@ -85,31 +85,6 @@ async function handleRestForNightSocket(data) {
 	if (!actor.isOwner) { console.log("Socket not for me."); return; } // This socket is not for this user.
 
 	await restForNightDialog(actor);
-
-	// Get the Rest for Night Dialog ready.
-/*	const tpl = 'modules/pf2e-dark-sun-setting/templates/rest-for-the-night.hbs';
-	const foodRequired = foodRequiredBySize(actor);
-	const myHtml = await renderTemplate(tpl, { actor, foodRequired });
-
-	// Popup the Dialog.
-	restForNightDialog(actor)
-	new Dialog({
-		title: "Resting for the Night",
-		content: myHtml,
-		buttons: {
-			button1: {
-				label: "Eat Provisions",
-				callback: () => { eatFood(actor) },
-				icon: `<i class="fas fa-check"></i>`
-			},
-	    button2: {
-	      label: "Make a Starvation Check",
-	      callback: () => { starve(character) },
-	      icon: `<i class="fas fa-times"></i>`
-			}
-		},
-		"default": "button1"
-	}).render(true); */
 }
 
 async function restForNightDialog(actor) {
