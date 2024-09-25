@@ -116,26 +116,26 @@ function sendChatMessage(character, content) {
 }
 
 Hooks.on("renderPartySheetPF2e", async (party, html, actor) => {
-	console.log("Party sheet detected!")
+	if (game.settings.get("pf2e-dark-sun-setting", "releaseAnnouncement")) {
+	 	// Path to custom template.
+		const tpl = 'modules/pf2e-dark-sun-setting/templates/party-resources.hbs';
 
- 	// Path to custom template.
-	const tpl = 'modules/pf2e-dark-sun-setting/templates/party-resources.hbs';
+		// Render the data into the template's handlebars.
+		const myHtml = await renderTemplate(tpl, { actor });
 
-	// Render the data into the template's handlebars.
-	const myHtml = await renderTemplate(tpl, { actor });
+		// Find the inventory portion.
+		const target = $(html).find('div.summary-data');
 
-	// Find the inventory portion.
-	const target = $(html).find('div.summary-data');
+		target.append(myHtml);
 
-	target.append(myHtml);
+	  html.find(".foodPoints").click(async (event) => {
+	      await adjustmentFoodDialog(party.actor._id);
+	  });
 
-  html.find(".foodPoints").click(async (event) => {
-      await adjustmentFoodDialog(party.actor._id);
-  });
-
-  html.find(".resourcePoints").click(async (event) => {
-      await adjustmentResourceDialog(party.actor._id);
-  });
+	  html.find(".resourcePoints").click(async (event) => {
+	      await adjustmentResourceDialog(party.actor._id);
+	  });
+	}
 })
 
 Hooks.on("renderCharacterSheetPF2e", async (party, html, actor) => {
@@ -243,6 +243,19 @@ function registerSettings() {
         }
     }
   });
+  game.settings.register("pf2e-dark-sun-setting", "useResourcePointsRule", {
+    name: "Use Food and Resource Points",
+    hint: "Use the custom Food and Resource Points rules for your campaign.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: value => {
+        if (value == true) {
+        	resetCompendiumLoaders();
+        }
+    }
+  }); 
 };
 
 Hooks.once("init", () => {
