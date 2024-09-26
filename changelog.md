@@ -10,7 +10,7 @@
 * ~~Should Thaumaturge class be included?~~
 ## Updates
 ### v0.0.3
-**Release Date: TBD**
+**Release Date: 2024-09-26**
 * Added world-level module setting to disable/enable Food and Resource Point System.
 * Added ancestry traits to **Dray** and **Thri-Kreen** ancestries (**Draji** and **Kreen**, respectively.)
 * Added **Lizardfolk** to Ancestry Compendium.
