@@ -2,16 +2,17 @@
 ## Road Map
 * Import Spells into Spells compendium.
 * Add Versatile Heritages.
+* Add Athasian Languages.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
-* Should Thaumaturge class be included?
+* ~~Should Thaumaturge class be included?~~
 ## Updates
 ### v0.0.3
 **Release Date: TBD**
 * Added world-level module setting to disable/enable Food and Resource Point System.
 * Added ancestry traits to **Dray** and **Thri-Kreen** ancestries (**Draji** and **Kreen**, respectively.)
-* Added Lizardfolk to Ancestry Compendium.
+* Added **Lizardfolk** to Ancestry Compendium.
 * Now handling Food Consumption/Starvation via sockets so players get prompted when GM clicks rest button on Party Sheet.
 * Seperated JavaScript into multiple files for easier maintenance and development; cleaned up and organized code.
 * Removed links to Party Sheet to modify food and resource points (for players only.)
