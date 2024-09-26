@@ -42,9 +42,10 @@ function addWildTalents() {
 	if (!game.user.isGM) { return; }
 
 	const campaignFeatSections = game.settings.get("pf2e", "campaignFeatSections");
+	
 	campaignFeatSections.push({
 		id: "pf2e-dark-sun-setting-wild-talents",
-		label: "Wild Talents",
+		label: "Wild Talents/Ancestry Bonus Feat",
 		supported: ["ancestry"],
 		slots: [1, 5, 9, 13, 17]
 	});
