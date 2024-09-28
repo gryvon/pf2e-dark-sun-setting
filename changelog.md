@@ -3,12 +3,16 @@
 * Import Spells into Spells compendium.
 * Add Versatile Heritages.
 * Add Athasian Languages.
-* Import Archtypes.
+* Create **Frost**, **Mountain**, **Radiance** mysteries.
+* Create **Drake** instinct. 
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
 * ~~Should Thaumaturge class be included?~~
 ## Updates
+### v0.0.4
+**Release Date: TBD**
+* Added Dedications/Archetypes. 
 ### v0.0.3
 **Release Date: 2024-09-26**
 * Added world-level module setting to disable/enable Food and Resource Point System.
