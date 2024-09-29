@@ -12,6 +12,9 @@
 * ~~Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?~~
 * ~~Should Thaumaturge class be included?~~
 ## Updates
+### v0.0.5
+**Release Date: TBD**
+* Removed several duplicate feat entries.
 ### v0.0.4
 **Release Date: 2024-09-28**
 * Added All Dedications/Archetypes. ==> Needs pruning.
