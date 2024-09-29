@@ -1,37 +1,23 @@
 # Changelog
 ## Road Map
 * Import Spells into Spells compendium.
-* Add Versatile Heritages.
 * Fix bonus languages for some ancestries.
 * Create **Frost**, **Mountain**, **Radiance** mysteries.
-* Add the rest of the animals to the **Animal Instinct**.
+* Add the new animals to the **Animal Instinct**.
+* Make changes to monk's **Unarmed Strikes**.
+* Prune Archetypes that should be unavailable in this setting.
+* Look into changes with druid's **Untamed Form**.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
-* Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
+* ~~Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?~~
 * ~~Should Thaumaturge class be included?~~
 ## Updates
 ### v0.0.4
-**Release Date: TBD**
-#### Automation Changes
-
-#### Content Changes
-* Added Dedications/Archetypes.
+**Release Date: 2024-09-28**
+* Added All Dedications/Archetypes. ==> Needs pruning.
 * Added Barbarian's **Drake Instinct**.
-* Added Languages:
-  - Balican
-  - Draji
-  - Gulgan
-  - Nibenese
-  - Raamish
-  - Tyrian
-  - Urikite
-  - Aarakocran
-  - Anakore
-  - Belgoi
-  - Braxat
-  - Gith
-  - Kreen
-  - Tarek
+* Added Languages: *Balican*, *Draji*, *Gulgan*, *Nibenese*, *Raamish*, *Tyrian*, *Urikite*, *Aarakocran*, *Anakore*, *Belgoi*, *Braxat*, *Gith*, *Kreen*, *Tarek*
+* Added Versatile Heritages: **Ardande**, **Gray-Touched**, **Naari**, **Oread**, **Shadow-Touched**, **Sylph**, **Undine**
 ### v0.0.3
 **Release Date: 2024-09-26**
 * Added world-level module setting to disable/enable Food and Resource Point System.
