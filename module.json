@@ -201,7 +201,13 @@
           "tari": "Tari",
           "kreen": "Kreen",
           "half-elf": "Half-Elf",
-          "half-giant": "Half-Giant"
+          "half-giant": "Half-Giant",
+          "brightsoul": "Brightsoul",
+          "dustsoul": "Dustsoul",
+          "lavasoul": "Lavasoul",
+          "mistsoul": "Mistsoul",
+          "gray-touched": "Gray-Touched",
+          "shadow-touched": "Shadow-Touched"          
         },
         "featTraits": {
           "aarakocra": "Aarakocra",
@@ -213,7 +219,13 @@
           "half-elf": "Half-Elf",
           "half-giant": "Half-Giant",
           "wild-talent": "Wild Talent",
-          "psyhic-warrior": "Psychic Warrior"
+          "psyhic-warrior": "Psychic Warrior",
+          "brightsoul": "Brightsoul",
+          "dustsoul": "Dustsoul",
+          "lavasoul": "Lavasoul",
+          "mistsoul": "Mistsoul",
+          "gray-touched": "Gray-Touched",
+          "shadow-touched": "Shadow-Touched"
         },
         "weaponTraits": {
           "flaw": {
