@@ -2,7 +2,7 @@
 ## Road Map
 * Import Spells into Spells compendium.
 * Add Versatile Heritages.
-* Add Athasian Languages.
+* Fix bonus languages for some ancestries.
 * Create **Frost**, **Mountain**, **Radiance** mysteries.
 * Add the rest of the animals to the **Animal Instinct**.
 ## Open Questions
