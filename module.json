@@ -312,6 +312,22 @@
           "bone-armor": "Bone Armor",
           "shell-armor": "Shell Armor",
           "lamellar-armor": "Lamellar Armor"
+        },
+        "languages": {
+          "balican": "Balican",
+          "draji": "Draji",
+          "gulgan": "Gulgan",
+          "nibenese": "Nibenese",
+          "raamish": "Raamish",
+          "tyrian": "Tyrian",
+          "urikite": "Urikite",
+          "aarakocran": "Aarakocran",
+          "anakore": "Anakore",
+          "belgoi": "Belgoi",
+          "braxat": "Braxat",
+          "gith": "Gith",
+          "kreen": "Kreen",
+          "tarek": "Tarek"
         }
       }
     }

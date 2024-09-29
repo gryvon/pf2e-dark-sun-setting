@@ -4,7 +4,7 @@
 * Add Versatile Heritages.
 * Add Athasian Languages.
 * Create **Frost**, **Mountain**, **Radiance** mysteries.
-* Create **Drake** instinct. 
+* Add the rest of the animals to the **Animal Instinct**.
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?
@@ -12,7 +12,26 @@
 ## Updates
 ### v0.0.4
 **Release Date: TBD**
-* Added Dedications/Archetypes. 
+#### Automation Changes
+
+#### Content Changes
+* Added Dedications/Archetypes.
+* Added Barbarian's **Drake Instinct**.
+* Added Languages:
+  - Balican
+  - Draji
+  - Gulgan
+  - Nibenese
+  - Raamish
+  - Tyrian
+  - Urikite
+  - Aarakocran
+  - Anakore
+  - Belgoi
+  - Braxat
+  - Gith
+  - Kreen
+  - Tarek
 ### v0.0.3
 **Release Date: 2024-09-26**
 * Added world-level module setting to disable/enable Food and Resource Point System.
