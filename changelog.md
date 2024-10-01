@@ -19,8 +19,8 @@
 **Release Date: 2024-09-28**
 * Added All Dedications/Archetypes. ==> Needs pruning.
 * Added Barbarian's **Drake Instinct**.
-* Added Languages: *Balican*, *Draji*, *Gulgan*, *Nibenese*, *Raamish*, *Tyrian*, *Urikite*, *Aarakocran*, *Anakore*, *Belgoi*, *Braxat*, *Gith*, *Kreen*, *Tarek*
-* Added Versatile Heritages: **Ardande**, **Gray-Touched**, **Naari**, **Oread**, **Shadow-Touched**, **Sylph**, **Undine**
+* Added Languages: *Balican*, *Draji*, *Gulgan*, *Nibenese*, *Raamish*, *Tyrian*, *Urikite*, *Aarakocran*, *Anakore*, *Belgoi*, *Braxat*, *Gith*, *Kreen*, *Tarek*.
+* Added Versatile Heritages: **Ardande**, **Gray-Touched**, **Naari**, **Oread**, **Shadow-Touched**, **Sylph**, **Undine**.
 ### v0.0.3
 **Release Date: 2024-09-26**
 * Added world-level module setting to disable/enable Food and Resource Point System.
