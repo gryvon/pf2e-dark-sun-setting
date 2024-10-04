@@ -1,25 +1,26 @@
 # Changelog
 ## Road Map
-
 * Fix bonus languages for some ancestries.
 * Create **Frost**, **Mountain**, **Radiance** mysteries.
 * Add the new animals to the **Animal Instinct**.
 * Make changes to monk's **Unarmed Strikes**.
 * Prune Archetypes that should be unavailable in this setting.
 * Look into changes with druid's **Untamed Form**.
+* Fix Versatile Human feat (draws from both Dark Sun and PF2e Core General Feats).
 ## Open Questions
 * How to handle monk's **Metal Strikes** and **Adamantine Strikes**?
 * ~~Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?~~
 * ~~Should Thaumaturge class be included?~~
 ## Updates
 ### v0.0.6
-**Release Date: TBD**
+**Release Date: 2024-10-04**
 * Fixed various journal entry links.
 * Uploaded Lizardfolk Ancestry Image.
 * Added Tari Heritages.
 * Added Tari Ancestry Feats.
 * Fixed Dwarf Ancestry Boosts & Flaw.
 * Added Level 0 common Equipment/Standard Gear.
+* Changed Human and Elf Ancestry Images.
 ### v0.0.5
 **Release Date: 2024-10-03**
 * Removed several duplicate feat entries.
