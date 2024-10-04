@@ -1,7 +1,7 @@
 {
   "id": "pf2e-dark-sun-setting",
   "title": "Dark Sun Setting for PF2E (Unofficial)",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -30,132 +30,171 @@
     {
       "name": "dark-sun-equipment",
       "label": "Equipment",
-      "path": "packs/dark-sun-equipment.db",
+      "path": "packs/dark-sun-equipment",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-actions",
       "label": "Actions",
-      "path": "packs/dark-sun-actions.db",
+      "path": "packs/dark-sun-actions",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-ancestries",
       "label": "Ancestries",
-      "path": "packs/dark-sun-ancestries.db",
+      "path": "packs/dark-sun-ancestries",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-ancestry-features",
       "label": "Ancestries Features",
-      "path": "packs/dark-sun-ancestry-features.db",
+      "path": "packs/dark-sun-ancestry-features",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-backgrounds",
       "label": "Backgrounds",
-      "path": "packs/dark-sun-backgrounds.db",
+      "path": "packs/dark-sun-backgrounds",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-classes",
       "label": "Classes",
-      "path": "packs/dark-sun-classes.db",
+      "path": "packs/dark-sun-classes",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-class-features",
       "label": "Class Features",
-      "path": "packs/dark-sun-class-features.db",
+      "path": "packs/dark-sun-class-features",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-feats",
       "label": "Feats",
-      "path": "packs/dark-sun-feats.db",
+      "path": "packs/dark-sun-feats",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-heritages",
       "label": "Heritages",
-      "path": "packs/dark-sun-heritages.db",
+      "path": "packs/dark-sun-heritages",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-spells",
       "label": "Spells",
-      "path": "packs/dark-sun-spells.db",
+      "path": "packs/dark-sun-spells",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-deities",
       "label": "Deities",
-      "path": "packs/dark-sun-deities.db",
+      "path": "packs/dark-sun-deities",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-journals",
       "label": "Dark Sun Journals",
-      "path": "packs/dark-sun-journals.db",
+      "path": "packs/dark-sun-journals",
       "system": "pf2e",
       "type": "JournalEntry",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "dark-sun-effects",
       "label": "Effects",
-      "path": "packs/dark-sun-effects.db",
+      "path": "packs/dark-sun-effects",
       "system": "pf2e",
       "type": "Item",
-      "private": false,
       "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -185,7 +224,8 @@
             "dark-sun-equipment",
             "dark-sun-deities",
             "dark-sun-effects"
-          ]
+          ],
+          "folders": []
         }
       ]
     }
@@ -207,7 +247,7 @@
           "lavasoul": "Lavasoul",
           "mistsoul": "Mistsoul",
           "gray-touched": "Gray-Touched",
-          "shadow-touched": "Shadow-Touched"          
+          "shadow-touched": "Shadow-Touched"
         },
         "featTraits": {
           "aarakocra": "Aarakocra",
@@ -349,15 +389,16 @@
     "scripts/provisions.js",
     "scripts/content-override.js"
   ],
-  "banner": "modules/pf2e-dark-sun-setting/assets/images/banner.webp",
   "media": [
     {
       "type": "setup",
       "caption": "Pathfinder 2e Dark Sun Campaign Setting",
-      "thumbnail": "modules/pf2e-dark-sun-setting/images/preview.webp"
+      "thumbnail": "modules/pf2e-dark-sun-setting/images/preview.webp",
+      "loop": false,
+      "flags": {}
     }
   ],
   "manifest": "https://github.com/gryvon/pf2e-dark-sun-setting/raw/refs/heads/main/module.json",
-  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/releases/download/v0.0.4/pf2e-dark-sun-setting.0.0.4.zip",
+  "download": "https://github.com/gryvon/pf2e-dark-sun-setting/releases/download/v0.0.5/pf2e-dark-sun-setting.0.0.5.zip",
   "url": "https://github.com/gryvon/pf2e-dark-sun-setting"
 }
