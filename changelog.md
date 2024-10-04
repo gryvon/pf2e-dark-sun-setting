@@ -16,6 +16,10 @@
 **Release Date: TBD**
 * Fixed various journal entry links.
 * Uploaded Lizardfolk Ancestry Image.
+* Added Tari Heritages.
+* Added Tari Ancestry Feats.
+* Fixed Dwarf Ancestry Boosts & Flaw.
+* Added Level 0 common Equipment/Standard Gear.
 ### v0.0.5
 **Release Date: 2024-10-03**
 * Removed several duplicate feat entries.
