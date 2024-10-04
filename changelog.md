@@ -1,6 +1,6 @@
 # Changelog
 ## Road Map
-* Import Spells into Spells compendium.
+
 * Fix bonus languages for some ancestries.
 * Create **Frost**, **Mountain**, **Radiance** mysteries.
 * Add the new animals to the **Animal Instinct**.
@@ -13,8 +13,9 @@
 * ~~Should Thaumaturge class be included?~~
 ## Updates
 ### v0.0.5
-**Release Date: TBD**
+**Release Date: 2024-10-03**
 * Removed several duplicate feat entries.
+* Imported Spells into Spells compendium.
 ### v0.0.4
 **Release Date: 2024-09-28**
 * Added All Dedications/Archetypes. ==> Needs pruning.
