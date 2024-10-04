@@ -12,10 +12,15 @@
 * ~~Oracle: Where is the **Frost**, **Mountain**, **Radiance** mysteries?~~
 * ~~Should Thaumaturge class be included?~~
 ## Updates
+### v0.0.6
+**Release Date: TBD**
+* Fixed various journal entry links.
+* Uploaded Lizardfolk Ancestry Image.
 ### v0.0.5
 **Release Date: 2024-10-03**
 * Removed several duplicate feat entries.
 * Imported Spells into Spells compendium.
+* Removed some duplicate feats (many still remain, will be a process.)
 ### v0.0.4
 **Release Date: 2024-09-28**
 * Added All Dedications/Archetypes. ==> Needs pruning.
